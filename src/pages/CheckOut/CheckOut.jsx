@@ -32,6 +32,9 @@ const CheckOut = () => {
     .then(res => res.json())
     .then(data => {
       console.log(data)
+      if(data.insertedId){
+        alert("Successfully order placed")
+      }
     })
   }
   return (
